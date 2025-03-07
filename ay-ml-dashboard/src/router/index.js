@@ -2,14 +2,23 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
   {
-    Path: "/",
-    name: "Home",
-    component: () => import(""),
+    path: "/",
+    redirect: "/index", // 建议加上 / 使之成为绝对路径
+  },
+  {
+    path: "/index",
+    name: "index",
+    component: () => import("../views/index.vue"),
+  },
+  {
+    path: "/index2",
+    name: "index2",
+    component: () => import("../views/index2.vue"),
   },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory,
+  history: createWebHashHistory(), // 注意这里需要调用函数 别落下括号 ()
   routes: routes,
 });
 
