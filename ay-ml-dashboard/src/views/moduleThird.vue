@@ -3,7 +3,20 @@ import { ref, reactive } from "vue";
 </script>
 
 <template>
-    <div style="flex: 0 1 30%"><dv-border-box8 :dur="5" style="width:100%; height:300px">
+    <div style="flex: 0 1 25%">
+        <dv-border-box8 :dur="5" style="width:100%; height:300px">
+            <div dv-bg>
+                <dv-decoration1 style="width:100%;height:50px;" />
+                <dv-capsule-chart :config="config" style="width:25rem;height:15rem;padding:0px" />
+            </div>
+        </dv-border-box8>
+        <dv-border-box8 :dur="5" style="width:100%; height:300px">
+            <div dv-bg>
+                <dv-decoration1 style="width:100%;height:50px;" />
+                <dv-capsule-chart :config="config" style="width:25rem;height:15rem;padding:0px" />
+            </div>
+        </dv-border-box8>
+        <dv-border-box8 :dur="5" style="width:100%; height:300px">
             <div dv-bg>
                 <dv-decoration1 style="width:100%;height:50px;" />
                 <dv-capsule-chart :config="config" style="width:25rem;height:15rem;padding:0px" />
