@@ -1,0 +1,16 @@
+html,body,#app {
+    width: 100%;
+    height: 100%; 
+}
+/* html {
+    font-size: 62.5%;
+} */
+.bg {
+    background: url(../img/bg2.png) no-repeat center;
+    width: 100%;
+    height: 100%; 
+    background-size: cover; 
+    /* 防止形变 */
+    color: #d3d3d3; 
+    /* margin: 0; */
+}
