@@ -8,12 +8,14 @@ import ModuleThird from './moduleThird.vue'
 </script>
 
 <template>
-    <ModuleTitle />
-    <div class="main">
-        <ModuleFirst />
-        <ModuleSecond />
-        <ModuleThird />
-    </div>
+    <dv-full-screen-container>
+        <ModuleTitle />
+        <div class="main">
+            <ModuleFirst />
+            <ModuleSecond />
+            <ModuleThird />
+        </div>
+    </dv-full-screen-container>
 </template>
 
 <style scoped>

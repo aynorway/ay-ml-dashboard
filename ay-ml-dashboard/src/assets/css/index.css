@@ -3,6 +3,7 @@ body,
 #app {
   width: 100%;
   height: 100%;
+  /* body margin 必须为0; 因为用了DataV全屏容器 */
   margin: 0;
   padding: 0;
 }
