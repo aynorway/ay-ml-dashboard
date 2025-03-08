@@ -1,5 +1,41 @@
 <script setup>
-import { ref } from "vue";
+import { ref, reactive } from "vue";
+const config = reactive({
+    data: [
+        {
+            name: 'ON',
+            value: 167
+        },
+        {
+            name: 'QC',
+            value: 123
+        },
+        {
+            name: 'BC',
+            value: 98
+        },
+        {
+            name: 'AB',
+            value: 75
+        },
+        {
+            name: 'MB',
+            value: 66
+        },
+    ],
+    colors: ['#ffbc38', '#fb7293', '#e690d1', '#32c5e9', '#96bfff'],
+    unit: '$',
+    labelNum: 8,
+})
+
+
+const config2 = reactive({
+  data: [66, 45],
+  shape: 'roundRect',
+})
+
+
+
 
 </script>
 
@@ -7,19 +43,22 @@ import { ref } from "vue";
     <div class="container">
         <dv-border-box8 :dur="5" style="width:400px; height:300px">
             <div dv-bg>
-                dv-border-box8
+                <dv-decoration1 style="width:200px;height:50px;" />
+                <dv-capsule-chart :config="config" style="width:25rem;height:15rem;padding:30px" />
             </div>
         </dv-border-box8>
 
         <dv-border-box12 style="width:400px; height:300px">
             <div dv-bg>
-                dv-border-box-12
+                <!-- <dv-decoration2 :dur="1" style="width:400px;height:5px;" /> -->
+                <dv-water-level-pond :config="config2" style="width:150px;height:200px" />
             </div>
         </dv-border-box12>
 
         <dv-border-box2 style="width:400px; height:300px" :color="['#4fd2dd', '#235fa7']">
             <div dv-bg>
-                dv-border-box-2
+                <!-- <dv-decoration-12 style="width:150px;height:150px;" /> -->
+                <dv-conical-column-chart :config="config" style="width:400px;height:200px;" />
             </div>
         </dv-border-box2>
 
