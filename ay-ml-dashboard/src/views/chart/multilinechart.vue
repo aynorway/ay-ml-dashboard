@@ -126,14 +126,16 @@ const option1 = {
 
 <template>
     <div>
-        <p style="text-align:center; font-size:9px; color:#fff;">
+
+        <dv-charts :option="option1" style="width:100%;height:15rem; margin-top: -1.5rem;" />
+
+        <p style="text-align:center; font-size:9px; color:#fff; margin-top: 0rem;">
             Data Source:
             <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/" target="_blank"
                 style="color:#0ff; text-decoration:underline;">
                 Bank of Canada - daily-exchange-rates
             </a>
         </p>
-        <dv-charts :option="option1" style="width:100%;height:15rem; margin-top: -1rem;" />
 
     </div>
 </template>

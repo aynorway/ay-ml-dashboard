@@ -12,6 +12,7 @@ import Multilinechart from './chart/multilinechart.vue'
                 <dv-capsule-chart :config="config" style="width:25rem;height:15rem;padding:0px" />
             </div>
         </dv-border-box8>
+
         <dv-border-box8 :dur="5" style="width:100%; height:300px">
             <div dv-bg>
                 <dv-decoration1 style="width:100%;height:50px;" />
@@ -19,6 +20,7 @@ import Multilinechart from './chart/multilinechart.vue'
                 <Multilinechart />
             </div>
         </dv-border-box8>
+        
         <dv-border-box8 :dur="5" style="width:100%; height:300px">
             <div dv-bg>
                 <dv-decoration1 style="width:100%;height:50px;" />

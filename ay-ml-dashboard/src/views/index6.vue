@@ -71,7 +71,7 @@ function chartInit() {
             min: 3000,
             max: 600000,
             left: '30%',
-            top: '85%',
+            top: '71%',
             orient: 'horizontal',  // 改为横向
             text: ['High', 'Low'],
             textStyle: {
@@ -89,7 +89,8 @@ function chartInit() {
             map: 'CA',  // 使用注册的地图名称
             roam: true, // 允许缩放和拖动
             zoom: 1.2, // 初始缩放级别
-            zoomMax: 4,
+            left: '10%',
+            top: '-5%',
             label: {
                 show: true,
                 fontSize: 13,
@@ -113,7 +114,11 @@ function chartInit() {
                 label: {
                     show: true,
                     fontSize: 18,
-                    color: 'blue',
+                    // color: 'blue',
+                    // color: 'orangered',
+                    // color: '#0f0',
+                    color: '#fff',
+                    // color: 'yellow',
 
                 }
             },
@@ -151,13 +156,13 @@ function chartInit() {
                 data: capitals
             }
         ],
-        grid: {
-            left: '5%',
-            right: '5%',
-            top: '0%',
-            bottom: '5%',
-            cotainLabel: true,
-        }
+        // grid: {
+        //     left: '5%',
+        //     right: '5%',
+        //     top: '-10%',
+        //     bottom: '15%',
+        //     cotainLabel: true,
+        // }
     };
 
     // 使用刚指定的配置项和数据显示图表。
