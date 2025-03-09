@@ -95,7 +95,7 @@ const updateRows = () => {
         <div w50rem h20rem p5 flex="~ col" justify-center items-center bg-dark>
             <div pt5 style="display: flex; justify-content: center; width: 100%;  font-size:9px;">
                 <dv-scroll-board ref="scrollBoard" :config="config"
-                    style="width:90%; height:220px; max-width: 100%; margin: 0 auto; overflow: hidden;"
+                    style="width:100%; height:220px; max-width: 100%; margin: 0 auto; overflow: hidden;"
                     @mouseover="mouseoverHandler" @click="clickHandler" />
             </div>
             <div py5 style="text-align:center;">

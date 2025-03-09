@@ -11,6 +11,11 @@ const routes = [
     component: () => import("../views/index.vue"),
   },
   {
+    path: "/index1",
+    name: "index1",
+    component: () => import("../views/index1.vue"),
+  },
+  {
     path: "/index2",
     name: "index2",
     component: () => import("../views/index2.vue"),
@@ -24,6 +29,16 @@ const routes = [
     path: "/index4",
     name: "index4",
     component: () => import("../views/index4.vue"),
+  },
+  {
+    path: "/index5",
+    name: "index5",
+    component: () => import("../views/index5.vue"),
+  },
+  {
+    path: "/index6",
+    name: "index6",
+    component: () => import("../views/index6.vue"),
   },
 ];
 
