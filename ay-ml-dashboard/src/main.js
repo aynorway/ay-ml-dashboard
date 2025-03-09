@@ -6,6 +6,8 @@ import '@/assets/css/common.css'
 import '@/assets/font/iconfont.css'
 import '@/assets/css/index.css' 
 import DataVVue3 from '@kjgl77/datav-vue3'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 // createApp(App).use(router).mount('#app')
 
@@ -14,5 +16,8 @@ const app = createApp(App)
 
 app.use(router)
 app.use(DataVVue3)
+app.use(ElementPlus)
 
 app.mount('#app')
+
+
