@@ -3,17 +3,29 @@ import { ref, reactive } from "vue";
 
 const option1 = {
   title: {
-    text: '畅销饮料占比饼状图'
+    text: '2024 CPI Components Breakdown (Canada)',
+    style: {
+      fill: '#fff',
+      fontSize: 12,
+      // fontWeight: 'light',
+      textAlign: 'center',
+      textBaseline: 'bottom'
+    }
   },
   series: [
     {
       type: 'pie',
+    //   style: {
+    //   fill: '#fff',
+    //   fontSize: 19,
+    // },
       data: [
-        { name: '可口可乐', value: 93 },
-        { name: '百事可乐', value: 32 },
-        { name: '哇哈哈', value: 65 },
-        { name: '康师傅', value: 44 },
-        { name: '统一', value: 52 },
+        { name: 'Shelter', value: 30 },
+        { name: 'Transportation', value: 20 },
+        { name: 'Food', value: 25 },
+        { name: 'Recreation & Culture', value: 10 },
+        { name: 'Health & Personal Care', value: 10 },
+        { name: 'Other', value: 5 }
       ],
       insideLabel: {
         show: true
@@ -26,11 +38,9 @@ const option1 = {
 </script>
 
 <template>
-    <div>
-        <dv-charts :option="option1" style="width:25rem;height:15rem;"/>
-    </div>
+  <div>
+    <dv-charts :option="option1" style="width:25rem;height:15rem;" />
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

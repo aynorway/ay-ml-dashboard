@@ -21,7 +21,7 @@ import ModuleThird from './moduleThird.vue'
 <style scoped>
 .main {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 100%;
     /* gap: 5px; */
     /* padding: 0 5px; */
