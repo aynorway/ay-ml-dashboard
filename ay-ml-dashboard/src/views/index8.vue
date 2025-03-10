@@ -191,8 +191,8 @@ const backendTreeData = ref([
 ]);
 
 const combinedTreeData = ref([
-  frontendTreeData.value[0],
-  backendTreeData.value[0]
+    frontendTreeData.value[0],
+    backendTreeData.value[0]
 ]);
 
 // 搜索功能
@@ -227,7 +227,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div style="flex: 1; position: relative; height: 250px;">
+    <div style="flex: 1; position: relative; height: 280px;">
         <div class="tree-wrapper">
             <el-input v-model="searchValue" placeholder="Search" clearable size="mini" class="search-input"
                 @keyup.enter="handleSearch" @clear="handleSearch">
@@ -237,8 +237,8 @@ onBeforeUnmount(() => {
                     </el-icon>
                 </template>
             </el-input>
-            <el-tree ref="treeRef" :data="combinedTreeData" :filter-node-method="filterNode" node-key="value" highlight-current
-                :props="{ label: 'label', children: 'children' }" class="custom-tree">
+            <el-tree ref="treeRef" :data="combinedTreeData" :filter-node-method="filterNode" node-key="value"
+                highlight-current :props="{ label: 'label', children: 'children' }" class="custom-tree">
                 <template #default="{ node }">
                     <span class="tree-node">
                         <span v-if="node.isLeaf" style="font-size:12px">📄</span>
@@ -257,6 +257,7 @@ onBeforeUnmount(() => {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin: auto;
     padding: 8px;
 }
 
@@ -265,6 +266,7 @@ onBeforeUnmount(() => {
     background: transparent !important;
     color: #ffffff;
     overflow-y: auto;
+    /* overflow设置滚动条  */
     scrollbar-width: thin;
 }
 

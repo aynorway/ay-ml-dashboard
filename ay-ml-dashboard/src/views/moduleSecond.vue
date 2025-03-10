@@ -17,7 +17,7 @@ import Index6 from './index6.vue';
 
             <div style="align-items: center; width:100%; height:90%; padding:10px; overflow: hidden; 
             /* background-color: #0ff; */
-            ">GeoJson
+            ">Vue3 GeoJson
 
                 <div style="padding-top: 30px; 
                 /* background-color: #0ff; */

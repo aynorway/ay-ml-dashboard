@@ -55,11 +55,11 @@ const routes = [
     name: "index9",
     component: () => import("../views/index9.vue"),
   },  
-  // {
-  //   path: "/index10",
-  //   name: "index10",
-  //   component: () => import("../views/index10.vue"),
-  // },  
+  {
+    path: "/index10",
+    name: "index10",
+    component: () => import("../views/index10.vue"),
+  },  
   // {
   //   path: "/index11",
   //   name: "index11",
