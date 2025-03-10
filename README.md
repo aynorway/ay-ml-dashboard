@@ -1,15 +1,12 @@
 
 # Data Visualization Dashboard (Full-Stack)
-# ay-ml-dashboard 
 
 ![Dashboard Preview](./img/dashboard.gif) 
 
-## Project Overview
- A full-stack data visualization dashboard implementing frontend-backend separation architecture. The frontend utilizes Vue3+DataV+ECharts for multi-dimensional data presentation, while the backend employs Node.js+MySQL for data management.
+## The ay-ml-dashboard Project 
+This is a full-stack dashboard that turns complex data into clear visual stories. The frontend uses Vue3 with DataV / ECharts to create interactive charts, while the backend (Node.js + MySQL) and Docker handles data storage and processing.  Designed to show full-stack development skills, with a flexible structure that lets teams easily add new data sources or chart types.
 
-## Project Objectives
-1. **Full-Stack Demonstration**: Showcase end-to-end development capabilities from database to frontend visualization
-2. **Extensible Architecture**: Modular design allows easy integration of new data sources/chart types
+![Dashboard Preview](./img/Vue.png) 
 
 ## Repository Links
 - Frontend: [https://github.com/aynorway/ay-ml-dashboard](https://github.com/aynorway/ay-ml-dashboard)
@@ -46,8 +43,6 @@
 - Responsive layout for multiple screen sizes
 - Component reuse with Vue props
 
-
-![Dashboard Preview](./img/Vue.png) 
 
 ## System Architecture
 ```
