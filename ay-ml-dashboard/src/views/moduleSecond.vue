@@ -78,7 +78,7 @@ import Index6 from './index6.vue';
                         </div>
 
                         <div dv-bg style="flex: 1;
-                        background-color: #0ff;
+                        /* background-color: #0ff; */
                         margin-top: -4.5%;
                         ">
                             <!-- 此处覆盖 ScrollBoard 默认宽高 -->
@@ -89,7 +89,7 @@ import Index6 from './index6.vue';
 
                     <!-- 右侧区域 -->
                     <div style="flex: 1; display: flex; flex-direction: column; margin-left: 5px;
-                    background-color: #f0f;
+                    /* background-color: #f0f; */
                     ">
                         <div style="
                         padding: 5px 5px;">
