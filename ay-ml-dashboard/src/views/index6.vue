@@ -1,3 +1,4 @@
+<!-- index6 整个Map文件 -->
 <script setup>
 import { ref, reactive, onMounted } from "vue";
 import * as echarts from 'echarts'; // 引入 
@@ -70,8 +71,8 @@ function chartInit() {
         visualMap: {
             min: 3000,
             max: 600000,
-            left: '30%',
-            top: '71%',
+            left: '24%',
+            top: '82%',
             orient: 'horizontal',  // 改为横向
             text: ['High', 'Low'],
             textStyle: {
@@ -88,9 +89,9 @@ function chartInit() {
         geo: {
             map: 'CA',  // 使用注册的地图名称
             roam: true, // 允许缩放和拖动
-            zoom: 1.2, // 初始缩放级别
+            zoom: 1.4, // 初始缩放级别
             left: '10%',
-            top: '-5%',
+            top: '-1%',
             label: {
                 show: true,
                 fontSize: 13,
@@ -182,7 +183,7 @@ function chartInit() {
 
     <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
     <!-- 修改模板中的容器样式 -->
-    <div ref="chart" style="width: 100%; height: 560px;"></div>
+    <div ref="chart" style="width: 100%; height: 620px;"></div>
 
 </template>
 

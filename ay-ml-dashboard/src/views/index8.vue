@@ -1,10 +1,11 @@
+<!-- Index8 重要 search bar 和 tree 结构展示 -->
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
 // 树形数据
 const frontendTreeData = ref([
     {
-        label: 'Frontend: ay-ml-dashboard-Vue3-Vite-Datav-Echarts',
+        label: 'Frontend-Tree: ay-ml-dashboard-Vue3-Vite-Datav-Echarts',
         value: '/',
         children: [
             {
@@ -123,7 +124,7 @@ const frontendTreeData = ref([
 
 const backendTreeData = ref([
     {
-        label: 'Backend: aywebjs-Docker-MySql-Node.js',
+        label: 'Backend-Tree: aywebjs-Docker-MySql-Node.js',
         value: '/',
         children: [
             { label: 'README.md', value: 'README.md' },

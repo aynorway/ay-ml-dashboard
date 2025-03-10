@@ -8,19 +8,19 @@ import Piechart from './chart/piechart.vue'
 
 <template>
     <div style="flex: 0 1 25%">
-        <dv-border-box8 :dur="5" style="width:100%; height:300px; overflow: hidden; /* 防止溢出 */">
+        <dv-border-box8 :dur="5" style="width:100%; height:350px; overflow: hidden; /* 防止溢出 */">
             <div dv-bg>
                 <dv-decoration1 style="width:100%;height:50px;" />
                 <Linechart />
             </div>
         </dv-border-box8>
-        <dv-border-box8 :dur="5" style="width:100%; height:300px">
+        <dv-border-box8 :dur="5" style="width:100%; height:350px">
             <div dv-bg>
                 <dv-decoration1 style="width:100%;height:50px;" />
                 <Barchart />
             </div>
         </dv-border-box8>
-        <dv-border-box8 :dur="5" style="width:100%; height:300px">
+        <dv-border-box8 :dur="5" style="width:100%; height:350px">
             <div dv-bg>
                 <dv-decoration1 style="width:100%;height:50px;" />
                 <Piechart />

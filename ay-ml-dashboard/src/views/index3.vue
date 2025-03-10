@@ -9,12 +9,12 @@ import ModuleThird from './moduleThird.vue'
 
 <template>
     <dv-full-screen-container>
-        <ModuleTitle />
         <div class="main">
             <ModuleFirst />
             <ModuleSecond />
             <ModuleThird />
         </div>
+        <ModuleTitle />
     </dv-full-screen-container>
 </template>
 

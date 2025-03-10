@@ -8,8 +8,8 @@ const config = reactive({
     headerBGC: 'rgba(4,5,14, 0.6)',  // 表头半透明
     oddRowBGC: 'rgba(20, 7, 74, 0.3)',  // 奇数行半透明灰色
     evenRowBGC: 'rgba(51, 46, 94, 0.2)', // 偶数行半透明浅灰
-    headerHeight: 30,  // 标题行高度
-    rowNum: 7, // 可见行数
+    headerHeight: 28,  // 标题行高度
+    rowNum: 7, // 可见行数 // 可以直接调整 
     // columnWidth: ['auto'], // 列宽自适应
     columnWidth: [50],
     waitTime: 2000, //ms 
@@ -83,14 +83,25 @@ const updateRows = () => {
 <template>
     <div style="font-size:9px;">
         <div w50rem h20rem p5 flex="~ col" justify-center items-center bg-dark>
-            <div pt5 style="display: flex; justify-content: center; width: 100%;  font-size:9px;">
-                <dv-scroll-board ref="scrollBoard" :config="config"
-                    style="width:100%; height:220px; max-width: 100%; margin: 0 auto; overflow: hidden;"
-                    @mouseover="mouseoverHandler" @click="clickHandler" />
+            <div pt5 style="display: flex; justify-content: center; 
+            width: 100%; 
+            ">
+                <dv-scroll-board ref="scrollBoard" :config="config" style="
+                width:100%; height:220px; 
+                max-width: 100%; 
+                /* margin: 0 auto;  */
+                /* overflow: hidden; */
+                "@mouseover="mouseoverHandler" @click="clickHandler" />
             </div>
+
             <div py5 style="text-align:center; margin-top: 3%;">
-                <button btn @click="updateRows" style="font-size:9px; color:#0ff; background-color: #293151;">
-                    UpdateRows
+                <button btn @click="updateRows" style="
+                font-size:9px; 
+                color:#0ff; 
+                padding: 2px 6px;
+                background-color: #293151;
+                ">                    
+                UpdateRows
                 </button>
             </div>
         </div>

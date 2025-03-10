@@ -93,7 +93,8 @@ const option1 = {
                         style="color:#0ff; text-decoration:underline;">
                         Open Data Canada</a> -->
         </p>
-        <dv-charts :option="option1" style="width:100%; max-width:100%; height:15rem; margin-top: -1rem;" />
+
+        <dv-charts :option="option1" style="width:100%; max-width:100%; height:15rem; margin-top: 0rem;" />
 
     </div>
 </template>

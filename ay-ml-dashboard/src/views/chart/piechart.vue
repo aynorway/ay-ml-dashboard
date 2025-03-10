@@ -39,7 +39,7 @@ const option1 = {
 
 <template>
   <div>
-    <dv-charts :option="option1" style="width:25rem;height:15rem;" />
+    <dv-charts :option="option1" style="width:25rem;height:15rem; margin-top: 1rem;" />
   </div>
 </template>
 

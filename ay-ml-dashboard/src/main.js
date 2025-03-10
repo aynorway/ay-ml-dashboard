@@ -8,6 +8,7 @@ import '@/assets/css/index.css'
 import DataVVue3 from '@kjgl77/datav-vue3'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import '@kjgl77/datav-vue3/dist/style.css';
 
 // createApp(App).use(router).mount('#app')
 
