@@ -3,8 +3,15 @@
 
 ![Dashboard Preview](./img/dashboard.gif) 
 
-## The ay-ml-dashboard Project 
-This is a full-stack dashboard that turns complex data into clear visual stories. The frontend uses Vue3 with DataV / ECharts to create interactive charts, while the backend (Node.js + MySQL) and Docker handles data storage and processing.  Designed to show full-stack development skills, with a flexible structure that lets teams easily add new data sources or chart types.
+## Project Description
+
+This is a full-stack dashboard that turns raw data into easy-to-understand charts and graphs. The frontend uses Vue3 with DataV and ECharts to create interactive, real-time visualizations. The backend uses Node.js and MySQL to store and manage data securely. Built to show my ability to design complete systems (frontend + backend), it’s also easy to upgrade later—like adding logins, new charts, or live data feeds. Perfect for teams needing clear data insights without complicated setup.
+
+Breakdown:
+* What? Dashboard for data visualization.
+* How? Vue3 frontend + Node.js/MySQL backend.
+* Why? To prove I can build real-world tools from scratch.
+* What’s next? More features (logins, 3D charts, etc.) if needed.
 
 ![Dashboard Preview](./img/Vue.png) 
 
